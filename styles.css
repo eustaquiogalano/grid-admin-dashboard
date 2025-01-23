@@ -12,6 +12,7 @@
 
 html {
     font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 body {
@@ -34,8 +35,23 @@ header {
 
 aside {
     background-color: var(--sidebar-color);
+    padding: 2rem;
 
+    display: grid;
+    gap: 1rem;
+    align-content: start;
     grid-area: aside;
+
+    color: white;
+    
+    div {
+        width: 100%;
+        border: 1px solid rgb(255, 255, 255);
+    }
+
+    ul {
+        list-style: none;
+    }
 }
 
 main {
