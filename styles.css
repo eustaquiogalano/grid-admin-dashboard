@@ -107,6 +107,79 @@ aside {
 
 main {
     background-color: var(--main-color);
+    padding: 1rem;
 
     grid-area: main;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 2rem;
+    grid-template-areas: 
+        "projects announcements"
+        "projects trending";
+
+    #projects {
+        grid-area: projects;
+        background-color: transparent;
+
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 1fr repeat(3, 5fr);
+        grid-template-areas: "h3 h3";
+        gap: 1.5rem;
+
+        h3 {
+            font-size: 1.5rem;
+            grid-area: h3;
+            align-content: end;
+        }
+
+        div {
+            background-color: var(--header-color);
+            border-radius: 6px;
+        }
+    }
+
+    #announcements {
+        grid-area: announcements;
+        display: grid;
+        grid-template-rows: 1fr 7fr;
+        gap: 1.5rem;
+
+        h3 {
+            font-size: 1.5rem;
+            align-content: end;
+        }
+
+        & > div {
+            display: grid;
+            background-color: var(--header-color);
+            border-radius: 6px;
+
+            div {
+                padding: .5rem;
+                font-size: .9rem;
+            }
+        }
+
+    }
+
+    #trending {
+        grid-area: trending;
+        display: grid;
+        grid-template-rows: 1fr 7fr;
+        gap: 1.5rem;    
+
+        h3 {
+            font-size: 1.5rem;
+            align-content: end;
+        }
+
+        & > div {
+            display: grid;
+            background-color: var(--header-color);
+            border-radius: 6px;
+            place-items: center;
+        }
+    }
 }
