@@ -97,11 +97,28 @@ aside {
     
     div {
         width: 100%;
-        border: 1px solid rgb(255, 255, 255);
     }
 
     ul {
         list-style: none;
+        font-size: 1.5rem;
+    }
+
+    li {
+        margin-bottom: 1.5rem;
+
+        svg {
+            width: 10%;
+        }
+
+        svg path {
+            fill: white;
+        }
+    }
+
+    #dashboard {
+        font-size: 2rem;
+        margin-bottom: 2rem;
     }
 }
 
