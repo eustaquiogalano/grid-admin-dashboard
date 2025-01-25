@@ -29,12 +29,12 @@ body {
 
 header {
     background-color: var(--header-color);
-    padding: 1rem;
+    padding: .5rem;
 
     grid-area: header;
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: 1fr 1.5fr;
 
     div {
         /* border: 1px solid black; */
@@ -106,12 +106,38 @@ header {
     #lower {
         display: grid;
         grid-auto-flow: column;
+        grid-template-columns: 1.5fr 1fr;
 
         #profile-name {
             display: grid;
             grid-auto-flow: column;
-            grid-template-columns: 1fr 2fr;
+            grid-template-columns: 20% 85%;
             place-items: center;
+            gap: 1rem;
+
+            button {
+                width: 50%;
+                height: 100%;
+                background-color: transparent;
+                border: none    ;
+                justify-self: end;
+                margin-right: 1rem;
+            }
+
+            img {
+                width: 100%;
+                border-radius: 100px;
+            }
+
+            p {
+                width: 70%;
+                justify-self: start;
+                font-weight: bolder;
+            }
+
+            #name {
+                font-size: 1.5rem;
+            }
         }
 
         #utility-buttons {
