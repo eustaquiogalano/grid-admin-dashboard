@@ -205,9 +205,9 @@ main {
 
     grid-area: main;
     display: grid;
-    grid-template-columns: 3fr 1fr;
+    grid-template-columns: 2fr 1fr;
     grid-template-rows: 1fr 1fr;
-    gap: 2rem;
+    gap: 1rem;
     grid-template-areas: 
         "projects announcements"
         "projects trending";
@@ -284,12 +284,18 @@ main {
 
         & > div {
             display: grid;
+
             background-color: var(--header-color);
             border-radius: 6px;
+            padding: .5rem;
 
             div {
                 padding: .5rem;
-                font-size: .9rem;
+                font-size: .8rem;
+            }
+
+            .bottom-border {
+                border-bottom: 1px solid black;
             }
         }
 
