@@ -292,6 +292,10 @@ main {
             div {
                 padding: .5rem;
                 font-size: .8rem;
+
+                h4 {
+                    margin-bottom: .1rem;
+                }
             }
 
             .bottom-border {
