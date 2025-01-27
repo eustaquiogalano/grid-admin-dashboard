@@ -309,14 +309,22 @@ main {
         grid-area: trending;
         display: grid;
         grid-template-rows: 1fr 7fr;
-        gap: 1.5rem;    
+        gap: .5rem;    
+        width: 100%;
+        justify-items: center;
+
+        /* border: 1px solid red; */
 
         h3 {
+            width: 60%;
             font-size: 1.5rem;
             align-content: end;
+            /* border: 1px solid red; */
         }
 
         & > div {
+            /* border: 1px solid red; */
+            width: 60%;
             display: grid;
             grid-auto-flow: row;
             grid-template-rows: repeat(4, 1fr);
@@ -328,7 +336,7 @@ main {
 
             div {
                 display: grid;
-                grid-template-columns: 15% 85%;
+                grid-template-columns: 25% 75%;
                 grid-auto-flow: column;
                 place-content: center;
                 place-items: center;
@@ -338,7 +346,7 @@ main {
                 height: 100%;
 
                 img {
-                    width: 50%;
+                    width: 70%;
                     border-radius: 50px;
                     justify-self: end;
                 }
